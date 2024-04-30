@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pc_box.css">
+    <link rel="stylesheet" href="style.css">
     <title>Practice Pokemon Database</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,10 +17,10 @@
       <nav class="navigator">
         <img src="images/pokeball_omage.png" class="nav-img">
         <div class="nav-links">
-          <a href="index.html">Home Page</a>
-          <a href="trainer.html">Trainer</a>
-          <a href="pokemon.html">Pokemon</a>
-          <a href="battles.html">Battles</a>
+          <a href="index.php">Home Page</a>
+          <a href="trainer.php">Trainer</a>
+          <a href="pokemon.php">Pokemon</a>
+          <a href="battles.php">Battles</a>
         </div>
       </nav>
     </div>  

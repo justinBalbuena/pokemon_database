@@ -15,12 +15,12 @@
   <body>
     <div class="container">
       <nav class="navigator">
-        <img src="images/pokeball_omage.png" class="nav-img">
+        <img src="images/beastball.png" class="nav-img">
         <div class="nav-links">
-          <a href="index.html">Home Page</a>
-          <a href="trainer.html">Trainer</a>
-          <a href="pokemon.html">Pokemon</a>
-          <a href="pc_box.html">PC BOX</a>
+          <a href="index.php">Home Page</a>
+          <a href="trainer.php">Trainer</a>
+          <a href="pokemon.php">Pokemon</a>
+          <a href="pc_box.php">PC BOX</a>
         </div>
       </nav>
     </div>  

@@ -16,22 +16,20 @@
     <div class="container">
       <nav class="navigator">
         <div class="page-directory">
-          <img src="images/pokeball_omage.png" class="nav-img">
-          <p>Trainer</p>
+          <img src="images/beastball.png" class="nav-img">
         </div>
 
         <div class="nav-links">
-          <a href="index.html">Home Page</a>
-          <a href="pokemon.html">Pokemon</a>
-          <a href="battles.html">Battles</a>
-          <a href="pc_box.html">PC BOX</a>
+          <a href="index.php">Home Page</a>
+          <a href="pokemon.php">Pokemon</a>
+          <a href="battles.php">Battles</a>
+          <a href="pc_box.php">PC BOX</a>
         </div>
       </nav>
     </div>  
     
     <div class="content">
       <div class="welcome_container">
-          <p>alsmd;askdmlskamdssa</p>
       </div>
     </div>
   </body>

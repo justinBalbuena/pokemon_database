@@ -13,27 +13,37 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="nav-container">
       <nav class="navigator">
-        <img src="images/pokeball_omage.png" class="nav-img">
+        <img src="images/beastball.png" class="nav-img">
         <div class="nav-links">
-          <a href="trainer.html">Trainer</a>
-          <a href="pokemon.html">Pokemon</a>
-          <a href="battles.html">Battles</a>
-          <a href="pc_box.html">PC BOX</a>
+          <a href="trainer.php">Trainer</a>
+          <a href="pokemon.php">Pokemon</a>
+          <a href="battles.php">Battles</a>
+          <a href="pc_box.php">PC BOX</a>
         </div>
       </nav>
     </div>  
     
-    <div class="content">
-      <div class="welcome_container">
-          <div class="trainer_intro_paragraph">
-            <span class="welcome_message">Welcome to The Pokemon League Database</span>
-            <span class="fan-made">A fan-made League Database Project</span>
+    <div class="content-container">
+
+      <div class="welcome-container">
+          <div class="welcome-paragraph">
+            <span class="welcome-message">Welcome to The League Database!</span>
+            <span class="fan-made"><i>a fan-made Pokemon League Database Project</i></span>
             
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi illum numquam modi dolorem tempore non vero quaerat maiores quisquam cumque, nihil a eius officia, libero sequi architecto. Neque, sequi nobis?
+            </p>
           
           </div>
       </div>
+
+      <div> 
+        <p>test test</p>
+      </div>
+
+      
     </div>
   </body>
 

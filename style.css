@@ -1,3 +1,11 @@
+/*
+  border color : #0c2527
+  background color : #A5B6E3
+*/
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -5,32 +13,32 @@
 }
 
 html {
-  background: url(images/pokemon-nature-pikachu-charmander-wallpaper-preview.jpg) no-repeat center center fixed;
+  background: url(images/ultraBeastWallpaper.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
-.container {
+.nav-container {
   display: flex;
 }
 
 .navigator {
-  background-color: red;
+  background-color: #0c2527;
   width: 100%;
   display: flex;
-  padding: 16px 0px;
+  padding: 8px 0px;
   align-items: center;
   gap: 24px;
-  font-size: 48px;
+  font-size: 32px;
   font-family: "Kanit", sans-serif;
   justify-content: space-between;
 }
 
 .nav-img {
   margin-left: 24px;
-  height: 62px;
-  width: 62px;
+  height: 60px;
+  width: 60px;
 }
 
 .nav-links {
@@ -49,8 +57,8 @@ a:visited {
 }
 
 a:hover {
-  color: #74c3ff;
-  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #ebde7c;
 }
 
 a:active {
@@ -58,15 +66,49 @@ a:active {
   font-style: italic;
 }
 
-.content {
-  width: 1200px;
+.content-container {
+  width: 1000px;
   margin: 0 auto;
-  background-color: cyan;
+  background-color: #A5B6E3;
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+  font-family: "Noto Sans", sans-serif;
+  border: #475b5e 2px solid;
+  border-radius: 10px;
+  align-items: center;
+  gap: 24px;
 }
 
-.trainer_intro_paragraph {
+.content-container div:first-child {
+  margin-top: 32px;
+}
+
+.content-container div:last-child {
+  margin-bottom: 32px;
+}
+
+.welcome-paragraph {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.welcome-container {
+  width: 92%;
+  border: #475b5e 5px solid;
+  border-radius: 10px;
+  background-color: #ffffee;
+}
+
+.welcome-message {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 18px;
 }

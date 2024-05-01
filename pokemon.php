@@ -15,7 +15,7 @@
   <body>
     <div class="container">
       <nav class="navigator">
-        <img src="images/pokeball_omage.png" class="nav-img">
+        <img src="images/beastball.png" class="nav-img">
         <div class="nav-links">
           <a href="index.php">Home Page</a>
           <a href="trainer.php">Trainer</a>

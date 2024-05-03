@@ -47,22 +47,21 @@ html {
   gap: 24px;
 }
 
-a:link {
+.nav-links a:link {
   color: white;
   text-decoration: none;
 }
 
-a:visited {
+.nav-links a:visited {
   color: white;
 }
 
-a:hover {
+.nav-links a:hover {
   text-decoration: underline;
   text-decoration-color: #ebde7c;
 }
 
-a:active {
-  background-color: black;
+.nav-links a:active {
   font-style: italic;
 }
 
@@ -91,7 +90,7 @@ a:active {
   margin-top: 24px;
 }
 
-.standard-container, .pokemon-standard-container {
+.standard-container, .pokemon-standard-container, .pcbox-container {
   width: 92%;
   border: #475b5e 5px solid;
   border-radius: 10px;
@@ -103,9 +102,10 @@ a:active {
   background-color: #ffffee;
 }
 
-.pokemon-standard-container {
+.pokemon-standard-container, .pcbox-container {
   background-color: #FFF;
 }
+
 
 .welcome-lines {
   margin-top: 32px;
@@ -132,6 +132,12 @@ a:active {
   font-weight: bold;
 }
 
+.index-credits {
+  margin-top: 16px;
+}
+.index-credits p {
+  font-size: 12px;
+}
 
 
 .more-info {
@@ -161,37 +167,99 @@ p {
   margin-top: 24px;
 }
 
-.pokemon-page-info p {
+.pokemon-page-info p, .pcbox-info-section p {
   font-size: 14px;
   line-height: 1.5;
 }
 
 .dex-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-shrink: 0;
   margin-left: 16px;
-  margin-top: 16px;
-  background-color: rgb(182, 182, 182);
-  display: block;
+
+  background-color: rgb(238, 238, 238);
+  border: solid 1px #7cb0eb;
+  border-radius: 10px;
+  display: table;
 }
 
-li a:link {
+.list-box-title {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.gen-list {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 16px;
+}
+
+a:link {
   color: black;
   text-decoration: none;
 }
 
-li a:visited {
+a:visited {
   color: rgb(64, 101, 95);
 }
 
-li a:hover {
+a:hover {
   text-decoration: underline;
   text-decoration-color: #7cb0eb;
 }
 
-li a:active {
-  background-color: black;
+a:active {
   font-style: italic;
 }
+
+li {
+  margin: 10px 0;
+}
+
+.mid-sect {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  align-items: start;
+}
+
+.mid-sect-img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.mid-sect-img-pair {
+  margin-left: 48px;
+}
+
+.mid-sect-img-region {
+  width: 500px;
+  height: 250px;
+  border-radius: 10px;
+  margin-left: 24px;
+}
+
+.gen1-section {
+  margin-top: 48px;
+}
+
+.image-credits {
+  text-align: center;
+}
+
+/* .pcbox-description-div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+} */
+
+.pcbox-description {
+  text-align: left;
+}
+
+
+/*Melvin's Section of CSS*/
+
+
+
+

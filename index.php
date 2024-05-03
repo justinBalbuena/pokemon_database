@@ -40,6 +40,11 @@
             <img class="welcome-mon-image" src="images/chandelure.png">
           </div>
         </div>
+
+        <div class="index-credits">
+          <p>Background image made by <a href="https://www.pixiv.net/en/users/1129046">KANtarou</a> on <a href="https://www.pixiv.net/en/users/1129046">pixiv</a><p/>
+        </div>
+
         <div>
           <p class="more-info">For further questions please contact jbalbuena02@manhattan.edu</p>
         </div>

@@ -40,15 +40,84 @@
               to every pokemon, they will appear in order of generation from 1-7. Johto, Hoenn, Sinnoh, Unova, Kalos.
             </p>
 
-            <div class="dex-nav">
-              <ol class="gen-list">
-                <li><a href="#">Generation 1</a></li>
-                <li><a href="#">Generation 2</a></li>
-                <li><a href="#">Generation 3</a></li>
-                <li><a href="#">Generation 4</a></li>
-                <li><a href="#">Generation 5</a></li>
-                <li><a href="#">Generation 6</a></li>
-              </ol>
+            <div class="mid-sect">
+              <div class="dex-nav">
+                <p class="list-box-title">Generations</p>
+
+                <ol class="gen-list">
+                  <li><a href="#">Generation 1</a></li>
+                  <li><a href="#">Generation 2</a></li>
+                  <li><a href="#">Generation 3</a></li>
+                  <li><a href="#">Generation 4</a></li>
+                  <li><a href="#">Generation 5</a></li>
+                  <li><a href="#">Generation 6</a></li>
+                </ol>
+              </div>
+
+              <div>
+                <img class="mid-sect-img-region" src="images/regionMap.jpg" />
+                <p class="image-credits">Official Pokemon Paldea Region Art<p>
+              </div>
+            </div>
+
+            <div class="gen1-section">
+              <h2 class="lower-page-title">
+                Generation 1
+              </h2>
+
+              <div>
+                
+              </div>
+            </div>
+
+            <div class="gen2-section">
+              <h2 class="lower-page-title">
+                Generation 2
+              </h2>
+
+              <div>
+                
+              </div>
+            </div>
+
+            <div class="gen3-section">
+              <h2 class="lower-page-title">
+                Generation 3
+              </h2>
+
+              <div>
+                
+              </div>
+            </div>
+
+            <div class="gen4-section">
+              <h2 class="lower-page-title">
+                Generation 4
+              </h2>
+
+              <div>
+                
+              </div>
+            </div>
+
+            <div class="gen5-section">
+              <h2 class="lower-page-title">
+                Generation 5
+              </h2>
+
+              <div>
+                
+              </div>
+            </div>
+
+            <div class="gen6-section">
+              <h2 class="lower-page-title">
+                Generation 6
+              </h2>
+
+              <div>
+                
+              </div>
             </div>
           
           </div>

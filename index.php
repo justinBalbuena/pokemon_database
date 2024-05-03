@@ -27,24 +27,27 @@
     
     <div class="content-container">
 
-      <div class="welcome-container">
+      <div class="standard-container">
+        <div class="welcome-lines">
+          <span class="welcome-message">Welcome to The Pokemon League Database!</span>
+          <span class="fan-made"><i>a fan-made Pokemon League Database Project</i></span>
+        </div>
+        <div class="welcome-paired-section">
           <div class="welcome-paragraph">
-            <span class="welcome-message">Welcome to The League Database!</span>
-            <span class="fan-made"><i>a fan-made Pokemon League Database Project</i></span>
-            
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi illum numquam modi dolorem tempore non vero quaerat maiores quisquam cumque, nihil a eius officia, libero sequi architecto. Neque, sequi nobis?
             </p>
-          
+            <img class="welcome-mon-image" src="images/chandelure.png">
           </div>
+        </div>
+        <div>
+          <p class="more-info">For further questions please contact jbalbuena02@manhattan.edu</p>
+        </div>
       </div>
 
-      <div> 
-        <p>test test</p>
-      </div>
 
       
     </div>
   </body>
 
-    </html>
+</html>

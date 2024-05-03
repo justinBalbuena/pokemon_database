@@ -13,11 +13,11 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="nav-container">
       <nav class="navigator">
         <img src="images/beastball.png" class="nav-img">
         <div class="nav-links">
-          <a href="index.php">Home Page</a>
+          <a href="index.php">Home</a>
           <a href="trainer.php">Trainer</a>
           <a href="battles.php">Battles</a>
           <a href="pc_box.php">PC BOX</a>
@@ -25,10 +25,44 @@
       </nav>
     </div>  
     
-    <div class="content">
-      <div class="welcome_container">
-          <p>alsmd;askdmlskamdssa</p>
+    <div class="content-container">
+      <div class="pokemon-standard-container">
+        <div class="content">
+
+          <h2 class="lower-page-title">
+            List of Pokemon by National Dex
+          </h2>
+
+          <div class="pokemon-page-info">
+            <p>
+              As you can probably guess, this is the page where all pokemon are desplayed. It will be taken from our
+              pokemon table from our database. Because it goes in order of the national dex number assigned
+              to every pokemon, they will appear in order of generation from 1-7. Johto, Hoenn, Sinnoh, Unova, Kalos.
+            </p>
+
+            <div class="dex-nav">
+              <ol class="gen-list">
+                <li><a href="#">Generation 1</a></li>
+                <li><a href="#">Generation 2</a></li>
+                <li><a href="#">Generation 3</a></li>
+                <li><a href="#">Generation 4</a></li>
+                <li><a href="#">Generation 5</a></li>
+                <li><a href="#">Generation 6</a></li>
+              </ol>
+            </div>
+          
+          </div>
+
+        </div>
       </div>
+      
+      
+
+
+     
+
+
+      
     </div>
   </body>
 

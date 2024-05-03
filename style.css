@@ -80,13 +80,6 @@ a:active {
   gap: 24px;
 }
 
-.content-container div:first-child {
-  margin-top: 32px;
-}
-
-.content-container div:last-child {
-  margin-bottom: 32px;
-}
 
 .welcome-paragraph {
   display: flex;
@@ -95,13 +88,43 @@ a:active {
   align-items: center;
   padding-left: 16px;
   padding-right: 16px;
+  margin-top: 24px;
 }
 
-.welcome-container {
+.standard-container, .pokemon-standard-container {
   width: 92%;
   border: #475b5e 5px solid;
   border-radius: 10px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.standard-container {
   background-color: #ffffee;
+}
+
+.pokemon-standard-container {
+  background-color: #FFF;
+}
+
+.welcome-lines {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-paragraph {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.welcome-mon-image {
+  width: 150px;
+  height: 150px;
 }
 
 .welcome-message {
@@ -109,6 +132,66 @@ a:active {
   font-weight: bold;
 }
 
+
+
+.more-info {
+  text-align: center;
+  font-size: 14px;
+  padding: 4px;
+  background-color: #96adec;
+  border-radius: 0px 0px 6px 6px;
+}
+
 p {
-  margin-top: 18px;
+  font-size: 18px;
+}
+
+.content {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.lower-page-title {
+  font-weight: 400;
+  margin-top: 24px; 
+  border-bottom: #0c2527 solid 1px;
+}
+
+.pokemon-page-info {
+  margin-top: 24px;
+}
+
+.pokemon-page-info p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.dex-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  margin-left: 16px;
+  margin-top: 16px;
+  background-color: rgb(182, 182, 182);
+  display: block;
+}
+
+li a:link {
+  color: black;
+  text-decoration: none;
+}
+
+li a:visited {
+  color: rgb(64, 101, 95);
+}
+
+li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #7cb0eb;
+}
+
+li a:active {
+  background-color: black;
+  font-style: italic;
 }

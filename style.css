@@ -5,7 +5,6 @@
 
 
 
-
 * {
   margin: 0;
   padding: 0;
@@ -66,7 +65,7 @@ html {
 }
 
 .content-container {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
   background-color: #A5B6E3;
   display: flex;
@@ -90,7 +89,10 @@ html {
   margin-top: 24px;
 }
 
-.standard-container, .pokemon-standard-container, .pcbox-container {
+.standard-container, 
+.pokemon-standard-container, 
+.pcbox-standard-container,
+.trainer-page-container {
   width: 92%;
   border: #475b5e 5px solid;
   border-radius: 10px;
@@ -99,10 +101,12 @@ html {
 }
 
 .standard-container {
-  background-color: #ffffee;
+  background-color: #FFFeee;
 }
 
-.pokemon-standard-container, .pcbox-container {
+.pokemon-standard-container, 
+.pcbox-standard-container,
+.trainer-page-container {
   background-color: #FFF;
 }
 
@@ -163,11 +167,11 @@ p {
   border-bottom: #0c2527 solid 1px;
 }
 
-.pokemon-page-info {
+.pokemon-page-info, .trainer-page-info {
   margin-top: 24px;
 }
 
-.pokemon-page-info p, .pcbox-info-section p {
+.pokemon-page-info p, .pcbox-page-info p, .trainer-page-info p {
   font-size: 14px;
   line-height: 1.5;
 }
@@ -222,6 +226,11 @@ li {
   align-items: start;
 }
 
+.mid-sect-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .mid-sect-img {
   width: 400px;
   height: 250px;
@@ -243,6 +252,43 @@ li {
   margin-top: 48px;
 }
 
+/*Tables*/
+table {
+  width: 800px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid #343a40; */
+  border-collapse: collapse; 
+  font-size: 18px;
+}
+
+
+th, td {
+  /* border: 1px solid #343a40; */
+  padding: 16px 24px;
+  text-align: left;
+}
+
+thead tr {
+  background-color: #087f5b;
+  color: white;
+}
+
+thead th {
+  width: 25%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+/*////////////////////////*/
+
+
 .image-credits {
   text-align: center;
 }
@@ -257,6 +303,83 @@ li {
   text-align: left;
 }
 
+
+.trainer-page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trainer-page-header p {
+  width: 50%;
+}
+
+.ash-img {
+  width: 200px;
+  height: 450px;
+}
+
+.champion-recruitment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  border-bottom:#0c2527 3px solid;
+}
+
+.champion-recruitment-header .champion-recruitment {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.champion-mid-sect {
+  border:#0c2527 5px solid;
+  border-radius: 10px;
+}
+
+.champion-img {
+  width: 16%;
+  height: 300px;
+  border:#7cb0eb 3px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+
+
+.form-div {
+  margin: 24px;
+	display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+
+  border:#0c2527 5px solid;
+  border-radius: 10px;
+  padding: 12px;
+  gap: 48px;
+}
+
+form label {
+  font-size: 18px;
+}
+
+input { 
+  height: 48px;
+  padding: 0px 12px;
+  font-size: 18px;
+}
 
 /*Melvin's Section of CSS*/
 

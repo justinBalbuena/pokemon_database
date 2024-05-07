@@ -42,7 +42,7 @@
         </div>
 
         <div class="index-credits">
-          <p>Background image made by <a href="https://www.pixiv.net/en/users/1129046">KANtarou</a> on <a href="https://www.pixiv.net/en/users/1129046">pixiv</a><p/>
+          <p>Background image made by <a target="_blank" rel="noopener noreferrer" href="https://www.pixiv.net/en/users/1129046">KANtarou</a> on <a target="_blank" rel="noopener noreferrer" href="https://www.pixiv.net/en/users/1129046">pixiv</a><p/>
         </div>
 
         <div>

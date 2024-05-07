@@ -65,16 +65,16 @@
               <div class="form-div">
 
                 <form method="post"  id="searchForm">
-                  <label for="search">Insert ID:</label>
-                  <input type="text" name="search" id="search">
-                  <input type="submit" value="Submit">
+                  <label for="insertID">Insert ID:</label>
+                  <input type="text" name="insertID" id="insertID">
+                  <input type="submit" name="getPC" value="Submit">
                 </form>
 
                 <?php
                   // Check if the form is submitted
-                  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                  if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['getPC'])) {
                     // Get the user input
-                    $search = $_POST["search"];
+                    $insertID = $_POST["insertID"];
 
                     // Connect to your database
                     $servername = "localhost";
@@ -90,7 +90,7 @@
                     }
 
                     // Construct the SQL query
-                    $sql = "SELECT * FROM pc_box WHERE pc_trainerID = $search";
+                    $sql = "SELECT * FROM pc_box WHERE pc_trainerID = $insertID";
 
                     // Execute the query
                     $result = $conn->query($sql);
@@ -150,6 +150,14 @@
                     // Get the user input
                     $searchAdd = $_POST["searchAdd"];
                     $pname = $_POST["pname"];
+
+                    // Connect to your database
+                    $servername = "localhost";
+                    $username = "root";
+                    $password = "Secret23$@user";
+                    $dbname = "arceus_po_box";
+
+                    $conn = new mysqli($servername, $username, $password, $dbname);
 
                     // Check connection
                     if ($conn->connect_error) {

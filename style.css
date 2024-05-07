@@ -263,6 +263,11 @@ table {
   font-size: 18px;
 }
 
+.trainer-page-table {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 
 th, td {
   /* border: 1px solid #343a40; */
@@ -279,12 +284,11 @@ thead th {
   width: 25%;
 }
 
-tbody tr:nth-child(odd) {
+tbody tr {
   background-color: #f8f9fa;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #e9ecef;
+  border-bottom: black 1px solid;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
 }
 /*////////////////////////*/
 
@@ -357,6 +361,19 @@ tbody tr:nth-child(even) {
   
 }
 
+.form-div-trainer-update {
+  margin: 24px;
+	display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  border: none;
+}
+
+.form-div-trainer-update form {
+  border: none;
+}
+
 form {
   display: flex;
   flex-direction: row;
@@ -368,7 +385,7 @@ form {
   border:#0c2527 5px solid;
   border-radius: 10px;
   padding: 12px;
-  gap: 48px;
+  gap: 18px;
 }
 
 form label {
@@ -379,6 +396,93 @@ input {
   height: 48px;
   padding: 0px 12px;
   font-size: 18px;
+}
+
+.normal-type {
+  background: #9fa19f;
+  color: black;
+}
+.fighting-type {
+  background-color: #ff8000;
+  color: white;
+}
+.flying-type {
+  background-color: #81b9ef;
+  color: white;
+}
+.poison-type {
+  background-color: #9141cb;
+  color: white;
+}
+.ground-type {
+  background-color: #915121;
+  color: white;
+}
+.rock-type {
+  background-color: #afa981;
+  color: white;
+}
+.bug-type {
+  background-color: #91a119;
+  color: white;
+}
+.ghost-type {
+  background-color: #704170;
+  color: white;
+}
+.steel-type {
+  background-color: #60a1b8;
+  color: white;
+}
+.fire-type {
+  background-color: #e62829;
+  color: white;
+}
+.water-type {
+  background-color: #2980ef;
+  color: white;
+}
+.grass-type {
+  background-color: #3fa129;
+  color: white;
+}
+.electric-type {
+  background-color: #fac000;
+  color: white;
+}
+.psychic-type {
+  background-color: #ef4179;
+  color: white;
+}
+.ice-type {
+  background-color: #3dcef3;
+  color: white;
+}
+.dragon-type {
+  background-color: #5060e1;
+  color: white;
+}
+
+.dark-type {
+  background-color: #624d4e;
+  color: white;
+}
+.fairy-type {
+  background-color: #ef70ef;
+  color: white;
+}
+
+.battle-images-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  margin-bottom: 64px;
+}
+
+.battle-images {
+  width: 400px;
+  height: 280px;
 }
 
 /*Melvin's Section of CSS*/

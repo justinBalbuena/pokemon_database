@@ -79,12 +79,12 @@
                 <form method="post"  id="searchForm">
                   <label for="search">Trainer ID:</label>
                   <input type="text" name="search" id="search">
-                  <input type="submit" value="Submit">
+                  <input type="submit" name="findTrainer" value="Submit">
                 </form>
 
                 <?php
                   // Check if the form is submitted
-                  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                  if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['findTrainer'])) {
                     // Get the user input
                     $search = $_POST["search"];
 
@@ -102,14 +102,14 @@
                     }
 
                     // Construct the SQL query
-                    $sql = "SELECT * FROM TRAINER LEFT JOIN POKEMON_TEAM ON TRAINER.trainerID = POKEMON_TEAM.team_trainerID WHERE TRAINER.trainerID = $search;";
+                    $sqll = "SELECT * FROM TRAINER LEFT JOIN POKEMON_TEAM ON TRAINER.trainerID = POKEMON_TEAM.team_trainerID WHERE TRAINER.trainerID = $search;";
                       
                     // Execute the query
-                    $result = $conn->query($sql);
+                    $result = $conn->query($sqll);
 
                       // Display results within HTML
                     if ($result->num_rows > 0) {
-                      echo '<table border="1" class="table">';
+                      echo '<table border="1" class="table  trainer-page-table">';
                       echo '<thead>
                               <tr>
                                 <td>Trainer ID</td>
@@ -139,7 +139,7 @@
                       echo '</table>';
                           
                     } else {
-                          echo "0 results";
+                        echo "0 results";
                     }
                     $conn->close();
                   }
@@ -155,8 +155,70 @@
                 Update Your Information
             </h2>
 
-            <div>
+            <div class="mid-sect-form">
+              <div class="form-div-trainer-update">
 
+                <form method="post" id="searchForm">
+
+                  <label for="trainerID">Trainer ID:</label>
+                  <input type="text" name="trainerID" id="trainerID">
+
+                  <label for="thingToChange">Thing to Change:</label>
+                  <select id="thingToChange" name="thingToChange">
+                    <option value="trainerName">Trainer Name</option>
+                    <option value="p_1">P1</option>
+                    <option value="p_2">P2</option>
+                    <option value="p_3">P3</option>
+                    <option value="p_4">P4</option>
+                    <option value="p_5">P5</option>
+                    <option value="p_6">P6</option>
+                  </select>
+
+                  <label for="valueOfChange">Value:</label>
+                  <input type="text" name="valueOfChange" id="valueOfChange">
+                  
+                  <input type="submit" name="changeTrainerInfo" value="Submit">
+                </form>
+
+                <?php
+                  // Check if the form is submitted
+                  // By having the && check the name of the related submit button I can make sure it doesn't depend on info from any other submit button
+                  if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['changeTrainerInfo'])) {
+                    // Get the user input
+                    $trainerID = $_POST["trainerID"];
+                    $thingToChange = $_POST["thingToChange"];
+                    $valueOfChange = $_POST["valueOfChange"];
+
+                    // Connect to your database
+                    $servername = "localhost";
+                    $username = "root";
+                    $password = "Secret23$@user";
+                    $dbname = "arceus_po_box";
+
+                    $conn = new mysqli($servername, $username, $password, $dbname);
+
+                    // Check connection
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
+
+                    // Construct the SQL query
+                    if (isset($trainerID) && isset($thingToChange) && isset($valueOfChange)) {
+
+                      $sql = "UPDATE TRAINER LEFT JOIN POKEMON_TEAM ON TRAINER.trainerID = POKEMON_TEAM.team_trainerID SET $thingToChange = '$valueOfChange' WHERE TRAINER.trainerID = $trainerID";
+
+                      // Execute the query
+                      $result = $conn->query($sql);
+                    }
+                    conn->close();
+                  }
+                ?>
+                <div id="results"></div>
+
+              </div>
+            </div>
+
+              
             </div>
 
             <h2 class="lower-page-title">

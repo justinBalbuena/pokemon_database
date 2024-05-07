@@ -128,7 +128,7 @@ $resultGen6 = mysqli_query($con, $queryGen6);
 
                       // Display results within HTML
                     if ($result->num_rows > 0) {
-                      echo '<table border="1" class="gen1-table table">';
+                      echo '<table border="1" class="table">';
                       echo '<thead>
                               <tr>
                                 <td>Pokedex Num</td>
@@ -144,8 +144,126 @@ $resultGen6 = mysqli_query($con, $queryGen6);
                         echo '<tr>';
                         echo '<td>' . $row["pokedexnum"] . '</td>';
                         echo '<td>' . $row["pokemon_name"] . '</td>';
-                        echo '<td>' . $row["type1"] . '</td>';
-                        echo '<td>' . $row["type2"] . '</td>';
+
+                        /* ------------- Type 1 ---------------*/
+                        if ($row["type1"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Water") {
+                          echo '<td class="water-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type1"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
+                        /* ------------- Type 2 ---------------*/
+                        if ($row["type2"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Water") {
+                          echo '<td class="water-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == NULL) {
+                          echo '<td>' . $row["type2"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
                         echo '<td>' . $row["weight"] . '</td>';
                         echo '<td>' . $row["height"] . '</td>';
                         echo '</tr>';
@@ -187,24 +305,140 @@ $resultGen6 = mysqli_query($con, $queryGen6);
                   </thead>
 
                   <tbody>
-                    <tr>
                       
-                    <?php
+                  <?php
                       while ($row = mysqli_fetch_assoc($resultGen1)) {
-                    ?>
-                      <td><?php echo $row['pokedexnum'];?></td>
-                      <td><?php echo $row['pokemon_name'];?></td>
-                      <td><?php echo $row['type1'];?></td>
-                      <td><?php echo $row['type2'];?></td>
-                      <td><?php echo $row['weight'];?></td>
-                      <td><?php echo $row['height'];?></td>
-                        
-                    </tr>
-                   <?php
-                      }
-                      
-                    ?>
+                    
+                        echo '<tr>';
+                        echo '<td>' . $row["pokedexnum"] . '</td>';
+                        echo '<td>' . $row["pokemon_name"] . '</td>';
 
+                        /* ------------- Type 1 ---------------*/
+                        if ($row["type1"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Water") {
+                          echo '<td class="water-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type1"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
+                        /* ------------- Type 2 ---------------*/
+                        if ($row["type2"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Water") {
+                          echo '<td class="water-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == NULL) {
+                          echo '<td>' . $row["type2"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
+                        echo '<td>' . $row["weight"] . '</td>';
+                        echo '<td>' . $row["height"] . '</td>';
+                        echo '</tr>';
+                          
+                  
+                      }  
+                    ?>
 
                   </tbody>
                   
@@ -232,20 +466,138 @@ $resultGen6 = mysqli_query($con, $queryGen6);
                   </thead>
 
                   <tbody>
-                    <tr>
                         
                     <?php
                       while ($row = mysqli_fetch_assoc($resultGen2)) {
-                    ?>
-                      <td><?php echo $row['pokedexnum'];?></td>
-                      <td><?php echo $row['pokemon_name'];?></td>
-                      <td><?php echo $row['type1'];?></td>
-                      <td><?php echo $row['type2'];?></td>
-                      <td><?php echo $row['weight'];?></td>
-                      <td><?php echo $row['height'];?></td>
+                    
+                        echo '<tr>';
+                        echo '<td>' . $row["pokedexnum"] . '</td>';
+                        echo '<td>' . $row["pokemon_name"] . '</td>';
+
+                        /* ------------- Type 1 ---------------*/
+                        if ($row["type1"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Water") {
+                          echo '<td class="water-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type1"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
+                        /* ------------- Type 2 ---------------*/
+                        if ($row["type2"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Water") {
+                          echo '<td class="water-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == NULL) {
+                          echo '<td>' . $row["type2"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
+                        echo '<td>' . $row["weight"] . '</td>';
+                        echo '<td>' . $row["height"] . '</td>';
+                        echo '</tr>';
                           
-                    </tr>
-                  <?php
+                  
                       }  
                     ?>
 
@@ -276,22 +628,140 @@ $resultGen6 = mysqli_query($con, $queryGen6);
                   </thead>
 
                   <tbody>
-                    <tr>
+                    
                       
-                    <?php
+                  <?php
                       while ($row = mysqli_fetch_assoc($resultGen3)) {
-                    ?>
-                      <td><?php echo $row['pokedexnum'];?></td>
-                      <td><?php echo $row['pokemon_name'];?></td>
-                      <td><?php echo $row['type1'];?></td>
-                      <td><?php echo $row['type2'];?></td>
-                      <td><?php echo $row['weight'];?></td>
-                      <td><?php echo $row['height'];?></td>
-                        
-                    </tr>
-                   <?php
-                      }
-                      
+                    
+                        echo '<tr>';
+                        echo '<td>' . $row["pokedexnum"] . '</td>';
+                        echo '<td>' . $row["pokemon_name"] . '</td>';
+
+                        /* ------------- Type 1 ---------------*/
+                        if ($row["type1"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Water") {
+                          echo '<td class="water-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type1"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
+                        /* ------------- Type 2 ---------------*/
+                        if ($row["type2"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Water") {
+                          echo '<td class="water-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == NULL) {
+                          echo '<td>' . $row["type2"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
+                        echo '<td>' . $row["weight"] . '</td>';
+                        echo '<td>' . $row["height"] . '</td>';
+                        echo '</tr>';
+                          
+                  
+                      }  
                     ?>
                   </tbody>
 
@@ -319,22 +789,138 @@ $resultGen6 = mysqli_query($con, $queryGen6);
                   </thead>
 
                   <tbody>
-                    <tr>
-                      
-                    <?php
+                  <?php
                       while ($row = mysqli_fetch_assoc($resultGen4)) {
-                    ?>
-                      <td><?php echo $row['pokedexnum'];?></td>
-                      <td><?php echo $row['pokemon_name'];?></td>
-                      <td><?php echo $row['type1'];?></td>
-                      <td><?php echo $row['type2'];?></td>
-                      <td><?php echo $row['weight'];?></td>
-                      <td><?php echo $row['height'];?></td>
-                        
-                    </tr>
-                   <?php
-                      }
-                      
+                    
+                        echo '<tr>';
+                        echo '<td>' . $row["pokedexnum"] . '</td>';
+                        echo '<td>' . $row["pokemon_name"] . '</td>';
+
+                        /* ------------- Type 1 ---------------*/
+                        if ($row["type1"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Water") {
+                          echo '<td class="water-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type1"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
+                        /* ------------- Type 2 ---------------*/
+                        if ($row["type2"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Water") {
+                          echo '<td class="water-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == NULL) {
+                          echo '<td>' . $row["type2"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
+                        echo '<td>' . $row["weight"] . '</td>';
+                        echo '<td>' . $row["height"] . '</td>';
+                        echo '</tr>';
+                          
+                  
+                      }  
                     ?>
                   </tbody>
 
@@ -363,22 +949,139 @@ $resultGen6 = mysqli_query($con, $queryGen6);
                   </thead>
 
                   <tbody>
-                    <tr>
-                      
-                    <?php
+
+                  <?php
                       while ($row = mysqli_fetch_assoc($resultGen5)) {
-                    ?>
-                      <td><?php echo $row['pokedexnum'];?></td>
-                      <td><?php echo $row['pokemon_name'];?></td>
-                      <td><?php echo $row['type1'];?></td>
-                      <td><?php echo $row['type2'];?></td>
-                      <td><?php echo $row['weight'];?></td>
-                      <td><?php echo $row['height'];?></td>
-                        
-                    </tr>
-                   <?php
-                      }
-                      
+                    
+                        echo '<tr>';
+                        echo '<td>' . $row["pokedexnum"] . '</td>';
+                        echo '<td>' . $row["pokemon_name"] . '</td>';
+
+                        /* ------------- Type 1 ---------------*/
+                        if ($row["type1"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Water") {
+                          echo '<td class="water-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type1"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
+                        /* ------------- Type 2 ---------------*/
+                        if ($row["type2"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Water") {
+                          echo '<td class="water-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == NULL) {
+                          echo '<td>' . $row["type2"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
+                        echo '<td>' . $row["weight"] . '</td>';
+                        echo '<td>' . $row["height"] . '</td>';
+                        echo '</tr>';
+                          
+                  
+                      }  
                     ?>
                   </tbody>
 
@@ -407,22 +1110,140 @@ $resultGen6 = mysqli_query($con, $queryGen6);
                   </thead>
 
                   <tbody>
-                    <tr>
+
                       
-                    <?php
+                  <?php
                       while ($row = mysqli_fetch_assoc($resultGen6)) {
-                    ?>
-                      <td><?php echo $row['pokedexnum'];?></td>
-                      <td><?php echo $row['pokemon_name'];?></td>
-                      <td><?php echo $row['type1'];?></td>
-                      <td><?php echo $row['type2'];?></td>
-                      <td><?php echo $row['weight'];?></td>
-                      <td><?php echo $row['height'];?></td>
-                        
-                    </tr>
-                   <?php
-                      }
-                      
+                    
+                        echo '<tr>';
+                        echo '<td>' . $row["pokedexnum"] . '</td>';
+                        echo '<td>' . $row["pokemon_name"] . '</td>';
+
+                        /* ------------- Type 1 ---------------*/
+                        if ($row["type1"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Water") {
+                          echo '<td class="water-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type1"] . '</td>';
+                        }
+                        else if ($row["type1"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type1"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
+                        /* ------------- Type 2 ---------------*/
+                        if ($row["type2"] == "Normal") {
+                          echo '<td class="normal-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fighting") {
+                          echo '<td class="fighting-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Flying") {
+                          echo '<td class="flying-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Poison") {
+                          echo '<td class="poison-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ground") {
+                          echo '<td class="ground-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Rock") {
+                          echo '<td class="rock-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Bug") {
+                          echo '<td class="bug-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ghost") {
+                          echo '<td class="ghost-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Steel") {
+                          echo '<td class="steel-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fire") {
+                          echo '<td class="fire-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Water") {
+                          echo '<td class="water-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Grass") {
+                          echo '<td class="grass-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Electric") {
+                          echo '<td class="electric-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Psychic") {
+                          echo '<td class="psychic-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Ice") {
+                          echo '<td class="ice-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dragon") {
+                          echo '<td class="dragon-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Dark") {
+                          echo '<td class="dark-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == "Fairy") {
+                          echo '<td class="fairy-type">' . $row["type2"] . '</td>';
+                        }
+                        else if ($row["type2"] == NULL) {
+                          echo '<td>' . $row["type2"] . '</td>';
+                        }
+                        /* -------------           ---------------*/
+
+
+                        echo '<td>' . $row["weight"] . '</td>';
+                        echo '<td>' . $row["height"] . '</td>';
+                        echo '</tr>';
+                          
+                  
+                      }  
                     ?>
                   </tbody>
 
@@ -437,13 +1258,6 @@ $resultGen6 = mysqli_query($con, $queryGen6);
 
         </div>
       </div>
-      
-      
-
-
-     
-
-
       
     </div>
   </body>
